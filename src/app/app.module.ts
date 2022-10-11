@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AddlistComponent } from './addlist/addlist.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import {HttpClientModule } from '@angular/common/http'
 const appRoutes: Routes=[
   {path:"",component:AddlistComponent}
 
@@ -22,6 +22,7 @@ const appRoutes: Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
